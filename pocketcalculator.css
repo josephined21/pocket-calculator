@@ -1,19 +1,40 @@
-.row1 {
-  display: block;
-  position: fixed;
+* {
+  font-family: 'Lato', sans-serif;
 }
-.row2 {
-  display: block;
-  position: fixed;
-  right: 100px;
+#display {
+  font-size: 45px;
 }
-.row3 {
-  display: block;
-  position: fixed;
-  right: 200px;
+.digits {
+  background-color: gainsboro;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  width: 85px;
+  padding: 15px 30px;
+  border-radius: 10px;
 }
-.row4 {
-  display: block;
-  position: fixed;
-  right: 300px;
+.operators {
+  background-color: cadetblue;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  width: 85px;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+.button {
+  background-color: silver;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  width: 85px;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: ;
+  color: ;
+}
+#digits0 {
+  width: 170px;
 }

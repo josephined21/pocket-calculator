@@ -6,75 +6,48 @@
 
     <link href = "pocketcalculator.css" type = "text/css" rel = "stylesheet">
     <script src = "pocketcalculator.js" type = "text/javascript"></script>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
 
   <body>
-    <div>
-      <p id = "display">
-      </p>
-    </div>
+    <div class = "pocketcalculator">
+      <p id = "display">0</p>
+      <table>
+        <tr>
+          <td><button onclick = "clear();" class = "button">AC</button></td>
+          <td><button onclick = "negation();" class = "button">+/-</button></td>
+          <td><button onclick = "percentage();" class = "button">%</button></td>
+          <td><button onclick = "operators('&divide');" class = "operators">&divide</button></td>
 
-    <div>
-      <button onclick = "clear();" class = "row1">AC</button>
+        </tr>
+        <tr>
+          <td><button onclick = "digits('7');" class = "digits">7</button></td>
+          <td><button onclick = "digits('8');" class = "digits">8</button></td>
+          <td><button onclick = "digits('9');" class = "digits">9</button></td>
+          <td><button onclick = "operators('&times');" class = "operators">&times</button></td>
+        </tr>
+        <tr>
+          <td><button onclick = "digits('4');" class = "digits">4</button></td>
+          <td><button onclick = "digits('5');" class = "digits">5</button></td>
+          <td><button onclick = "digits('6');" class = "digits">6</button></td>
+          <td><button onclick = "operators('-');" class = "operators">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick = "digits('1');" class = "digits">1</button></td>
+          <td><button onclick = "digits('2');" class = "digits">2</button></td>
+          <td><button onclick = "digits('3');" class = "digits">3</button></td>
+          <td><button onclick = "operators('+');" class = "operators">+</button></td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td><button onclick = "digits('0');" class = "digits" id = "digits0">0</button></td>
+          <td><button onclick = "decimalpoint('.');" class = "digits">.</button></td>
+          <td><button onclick = "equals();" class = "operators">=</button></td>
+        </tr>
+      </table>
     </div>
-
-    <div>
-      <button onclick = "negation();" class = "row2">+/-</button>
-    </div>
-
-    <div>
-      <button onclick = "percentage();" class = "row3">%</button>
-    </div>
-
-    <div>
-      <button onclick = "division();" class = "row4">division symbol</button>
-    </div>
-    <div>
-      <button onclick = "multiplication();" class = "row4">multiplication symbol</button>
-    </div>
-    <div>
-      <button onclick = "subtraction();" class = "row4">-</button>
-    </div>
-    <div>
-      <button onclick = "addition();" class = "row4">+</button>
-    </div>
-    <div>
-      <button onclick = "equals();" class = "row4">=</button>
-    </div>
-
-    <div>
-      <button onclick = "digits();" class = "row1">1</button>
-    </div>
-    <div>
-      <button onclick = "digits();" class = "row2">2</button>
-    </div>
-    <div>
-      <button onclick = "digits();" class = "row3">3</button>
-    </div>
-    <div>
-      <button onclick = "digits();" class = "row1">4</button>
-    </div>
-    <div>
-      <button onclick = "digits();" class = "row2">5</button>
-    </div>
-    <div>
-      <button onclick = "digits();" class = "row3">6</button>
-    </div>
-    <div>
-      <button onclick = "digits();" class = "row1">7</button>
-    </div>
-    <div>
-      <button onclick = "digits();" class = "digits">8</button>
-    </div>
-    <div>
-      <button onclick = "digits();" class = "digits">9</button>
-    </div>
-    <div class = "digits">
-      <button onclick = "digits();" id = "digits0">0</button>
-    </div>
-    <div>
-      <button onclick = "decimalPoint();">.</button>
-    </div>
-
   </body>
 </html>
