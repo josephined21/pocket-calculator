@@ -1,15 +1,28 @@
-function digits(){
-  
-}
-function addition(){
+let value;
 
+function digits(digit){
+  var display = document.getElementById("display");
+  display.innerHTML += digit;
 }
-function subtraction(){
-
+function decimalpoint(){
+  var display = document.getElementById("display");
+  display.innerHTML += ".";
 }
-function multiplication(){
-
+function operators(operator){
+  var display = document.getElementById("display");
+  display.innerHTML += "&nbsp" + operator + "&nbsp";
 }
-function division(){
-
+function equals(){
+  //
+  var display = document.getElementById("display");
+  display.innerHTML = value;
+}
+function percentage(){
+  //
+}
+function negation(){
+  //
+}
+function clear(){
+  //
 }
