@@ -7,41 +7,45 @@
     <link href = "pocketcalculator.css" type = "text/css" rel = "stylesheet">
     <script src = "pocketcalculator.js" type = "text/javascript"></script>
 
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
 
   <body>
     <div class = "pocketcalculator">
-      <p id="display"></p>
+      <p id = "display">0</p>
       <table>
         <tr>
-          <td><input type = "button" value = "AC" onclick = "clear();" class = "button"/></td>
-          <td><input type = "button" value = "+/-" onclick = "negation();" class = "button"/></td>
-          <td><input type = "button" value = "%" onclick = "percentage();" class = "button"/></td>
-          <td><input type = "button" value = "&divide" onclick = "operators('&divide');" class = "button"/></td>
+          <td><button onclick = "clear();" class = "button">AC</button></td>
+          <td><button onclick = "negation();" class = "button">+/-</button></td>
+          <td><button onclick = "percentage();" class = "button">%</button></td>
+          <td><button onclick = "operators('&divide');" class = "operators">&divide</button></td>
+
         </tr>
         <tr>
-          <td><input type = "button" value = "7" onclick = "digits('7');" class = "button"/></td>
-          <td><input type = "button" value = "8" onclick = "digits('8');" class = "button"/></td>
-          <td><input type = "button" value = "9" onclick = "digits('9');" class = "button"/></td>
-          <td><input type = "button" value = "&times" onclick = "operators('&times');" class = "button"/></td>
+          <td><button onclick = "digits('7');" class = "digits">7</button></td>
+          <td><button onclick = "digits('8');" class = "digits">8</button></td>
+          <td><button onclick = "digits('9');" class = "digits">9</button></td>
+          <td><button onclick = "operators('&times');" class = "operators">&times</button></td>
         </tr>
         <tr>
-          <td><input type = "button" value = "4" onclick = "digits('4');" class = "button"/></td>
-          <td><input type = "button" value = "5" onclick = "digits('5');" class = "button"/></td>
-          <td><input type = "button" value = "6" onclick = "digits('6');" class = "button"/></td>
-          <td><input type = "button" value = "-" onclick = "operators('-');" class = "button"/></td>
+          <td><button onclick = "digits('4');" class = "digits">4</button></td>
+          <td><button onclick = "digits('5');" class = "digits">5</button></td>
+          <td><button onclick = "digits('6');" class = "digits">6</button></td>
+          <td><button onclick = "operators('-');" class = "operators">-</button></td>
         </tr>
         <tr>
-          <td><input type = "button" value = "1" onclick = "digits('1');" class = "button"/></td>
-          <td><input type = "button" value = "2" onclick = "digits('2');" class = "button"/></td>
-          <td><input type = "button" value = "3" onclick = "digits('3');" class = "button"/></td>
-          <td><input type = "button" value = "+" onclick = "operators('+');" class = "button"/></td>
+          <td><button onclick = "digits('1');" class = "digits">1</button></td>
+          <td><button onclick = "digits('2');" class = "digits">2</button></td>
+          <td><button onclick = "digits('3');" class = "digits">3</button></td>
+          <td><button onclick = "operators('+');" class = "operators">+</button></td>
         </tr>
+      </table>
+      <table>
         <tr>
-          <td><input type = "button" value = "0" onclick = "digits('0');" class = "button"/></td>
-          <td><input type = "button" value = "." onclick = "decimalpoint();" class = "button"/></td>
-          <td><input type = "button" value = "=" onclick = "equals();" class = "button"/></td>
+          <td><button onclick = "digits('0');" class = "digits" id = "digits0">0</button></td>
+          <td><button onclick = "decimalpoint('.');" class = "digits">.</button></td>
+          <td><button onclick = "equals();" class = "operators">=</button></td>
         </tr>
       </table>
     </div>

@@ -1,28 +1,46 @@
-let value;
+let value = 0;
 
-function digits(digit){
-  var display = document.getElementById("display");
+function digits(digit) {
+  let display = document.getElementById("display");
   display.innerHTML += digit;
 }
-function decimalpoint(){
-  var display = document.getElementById("display");
+function decimalpoint() {
+  let display = document.getElementById("display");
   display.innerHTML += ".";
 }
-function operators(operator){
-  var display = document.getElementById("display");
+function operators(operator) {
+  /*
+  if(operator == "&times"){
+
+  }
+  else if(operator == "&divide"){
+
+  }
+  else if(operator == "+"){
+
+  }
+  else if(operator == "-"){
+
+  }
+  */
+  let display = document.getElementById("display");
   display.innerHTML += "&nbsp" + operator + "&nbsp";
 }
-function equals(){
+function equals() {
+  let display = document.getElementById("display");
+  display.innerHTML = value;
   //
-  var display = document.getElementById("display");
+}
+function percentage() {
+  //value /= 100;
+  let display = document.getElementById("display");
   display.innerHTML = value;
 }
-function percentage(){
+function negation() {
+  let display = document.getElementById("display");
   //
 }
-function negation(){
-  //
-}
-function clear(){
-  //
+function clear() {
+  let display = document.getElementById("display");
+  //display.innerHTML = "";
 }
