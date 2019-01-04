@@ -1,11 +1,24 @@
 * {
   font-family: 'Lato', sans-serif;
 }
+.pocketcalculator {
+  height: 480px;
+  width: 360px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
 #display {
-  font-size: 45px;
+  font-size: 55px;
+  height: 100px;
+  width: 335px;
+  margin: 3px 3px 3px 3px;
+  padding-top: 25px;
+  padding-left: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
 }
 .digits {
-  background-color: gainsboro;
+  background-color: lightgrey;
   color: black;
   font-size: 25px;
   text-align: center;
@@ -14,7 +27,7 @@
   border-radius: 10px;
 }
 .operators {
-  background-color: cadetblue;
+  background-color: black;
   color: white;
   font-size: 25px;
   text-align: center;
@@ -23,7 +36,7 @@
   border-radius: 10px;
 }
 .button {
-  background-color: silver;
+  background-color: darkgrey;
   color: black;
   font-size: 25px;
   text-align: center;
@@ -36,5 +49,14 @@
   color: ;
 }
 #digits0 {
-  width: 170px;
+  width: 175px;
+  position: fixed;
+}
+#decimalpoint {
+  position: fixed;
+  left: 190px;
+}
+#equals {
+  position: fixed;
+  left: 277.5px;
 }

@@ -19,33 +19,30 @@
           <td><button onclick = "clear();" class = "button">AC</button></td>
           <td><button onclick = "negation();" class = "button">+/-</button></td>
           <td><button onclick = "percentage();" class = "button">%</button></td>
-          <td><button onclick = "operators('&divide');" class = "operators">&divide</button></td>
-
+          <td><button onclick = "display(' &divide ');" class = "operators">&divide</button></td>
         </tr>
         <tr>
-          <td><button onclick = "digits('7');" class = "digits">7</button></td>
-          <td><button onclick = "digits('8');" class = "digits">8</button></td>
-          <td><button onclick = "digits('9');" class = "digits">9</button></td>
-          <td><button onclick = "operators('&times');" class = "operators">&times</button></td>
+          <td><button onclick = "display('7');" class = "digits">7</button></td>
+          <td><button onclick = "display('8');" class = "digits">8</button></td>
+          <td><button onclick = "display('9');" class = "digits">9</button></td>
+          <td><button onclick = "display(' &times ');" class = "operators">&times</button></td>
         </tr>
         <tr>
-          <td><button onclick = "digits('4');" class = "digits">4</button></td>
-          <td><button onclick = "digits('5');" class = "digits">5</button></td>
-          <td><button onclick = "digits('6');" class = "digits">6</button></td>
-          <td><button onclick = "operators('-');" class = "operators">-</button></td>
+          <td><button onclick = "display('4');" class = "digits">4</button></td>
+          <td><button onclick = "display('5');" class = "digits">5</button></td>
+          <td><button onclick = "display('6');" class = "digits">6</button></td>
+          <td><button onclick = "display(' - ');" class = "operators">-</button></td>
         </tr>
         <tr>
-          <td><button onclick = "digits('1');" class = "digits">1</button></td>
-          <td><button onclick = "digits('2');" class = "digits">2</button></td>
-          <td><button onclick = "digits('3');" class = "digits">3</button></td>
-          <td><button onclick = "operators('+');" class = "operators">+</button></td>
+          <td><button onclick = "display('1');" class = "digits">1</button></td>
+          <td><button onclick = "display('2');" class = "digits">2</button></td>
+          <td><button onclick = "display('3');" class = "digits">3</button></td>
+          <td><button onclick = "display(' + ');" class = "operators">+</button></td>
         </tr>
-      </table>
-      <table>
         <tr>
-          <td><button onclick = "digits('0');" class = "digits" id = "digits0">0</button></td>
-          <td><button onclick = "decimalpoint('.');" class = "digits">.</button></td>
-          <td><button onclick = "equals();" class = "operators">=</button></td>
+          <td><button onclick = "display('0');" class = "digits" id = "digits0">0</button></td>
+          <td><button onclick = "display('.');" class = "digits" id = "decimalpoint">.</button></td>
+          <td><button onclick = "equals();" class = "operators" id = "equals">=</button></td>
         </tr>
       </table>
     </div>
