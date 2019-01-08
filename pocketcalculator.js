@@ -1,16 +1,11 @@
-let n;
+let a;
+let array = [];
 
 function display(value){
   let display = document.getElementById("display");
   display.innerHTML += value;
+  array.push(value);
 }
-
-let x = 0;
-let y = 0;
-
-//function () {
-
-//}
 
 /*
 function digits(digit) {
@@ -21,28 +16,94 @@ function decimalpoint() {
   let display = document.getElementById("display");
   display.innerHTML += ".";
 }
-function operators(operator) {
+function operators() {
   let display = document.getElementById("display");
-  display.innerHTML += "&nbsp" + operator + "&nbsp";
+  display.innerHTML += operator;
 }
 */
 
+let x;
+let y;
+
+function addition(x, y) {
+  return x + y;
+}
+function subtraction(x, y) {
+  return x - y;
+}
+function multiplication(x, y) {
+  return x * y;
+}
+function division(x, y) {
+  return x / y;
+}
+/*
+function powers2(x) {
+  return x ** 2;
+}
+function powers3(x) {
+  return x ** 3;
+}
+function powers(x, y) {
+  return x ** y;
+}
+*/
+
+// function equals does not work
 function equals() {
   let display = document.getElementById("display");
-  //display.innerHTML = n;
-  //
+  /*
+  for(let n = 0; n < array.length - 1; n++){
+    if(!isNaN(Number(array[n]))){ // fix this line
+      x += array[n] * (10 * (array.length - n - 1)); // check this line
+    }
+    // find y
+    else if(array[n] = ","){
+
+    }
+    else if(array[n] = "."){
+
+    }
+    else if(array[n] = "-"){
+
+    }
+    else if(array[n] = "&times"){
+      multiplication(x, y);
+    }
+    else if(array[n] = "&divide"){
+      division(x, y);
+    }
+    else if(array[n] = "+"){
+      addition(x, y);
+    }
+    else if(array[n] = "-"){
+      subtraction(x, y);
+    }
+  }
+  */
+  /*
+  if(isNaN(a)){
+    display.innerHTML = "ERROR";
+  }
+  */
+  display.innerHTML = a;
 }
+
 function percentage() {
   let display = document.getElementById("display");
-  //n = Number(display.innerHTML);
-  //n /= 100;
-  //display.innerHTML = ;
+  a /= 100;
+  display.innerHTML = a;
 }
+
 function negation() {
   let display = document.getElementById("display");
-  // display.innerHTML = ;
+  a = -a
+  display.innerHTML = a;
 }
+
+// function clear does not work
 function clear() {
   let display = document.getElementById("display");
-  //display.innerHTML = "";
+  display.innerHTML = "0";
+  a = 0;
 }
