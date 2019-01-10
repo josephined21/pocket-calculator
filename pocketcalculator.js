@@ -1,10 +1,11 @@
-let a;
-let array = [];
+let a = 0;
+let display = document.getElementById("display");
+//let array = [];
 
 function display(value){
   let display = document.getElementById("display");
   display.innerHTML += value;
-  array.push(value);
+  //array.push(value);
 }
 
 /*
@@ -47,6 +48,11 @@ function powers3(x) {
 function powers(x, y) {
   return x ** y;
 }
+function squareroot(x) {
+  return Math.SQRT(x);
+}
+function root(x) {
+  return (x);
 */
 
 // function equals does not work
@@ -104,6 +110,6 @@ function negation() {
 // function clear does not work
 function clear() {
   let display = document.getElementById("display");
-  display.innerHTML = "0";
-  a = 0;
+  display.innerHTML = 0;
+
 }
