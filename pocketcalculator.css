@@ -1,13 +1,9 @@
 * {
   font-family: 'Lato', sans-serif;
 }
-.pocketcalculator {
-  height: 480px;
-  width: 360px;
-  border: 1px solid black;
-  border-radius: 10px;
-}
 #display {
+  background-color: white;
+  color: black;
   font-size: 55px;
   height: 100px;
   width: 335px;

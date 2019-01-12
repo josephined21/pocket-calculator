@@ -12,39 +12,42 @@
   </head>
 
   <body>
-    <div class = "pocketcalculator">
-      <p id = "display"></p>
+    <form name = "pocketcalculator">
+      <input type = "text" id = "display" disabled/>
+      <script>
+        pocketcalculator.display.value = '0';
+      </script>
       <table>
         <tr>
-          <td><button onclick = "clear();" class = "button">AC</button></td>
-          <td><button onclick = "negation();" class = "button">+/-</button></td>
-          <td><button onclick = "percentage();" class = "button">%</button></td>
-          <td><button onclick = "display(' &divide ');" class = "operators">&divide</button></td>
+          <td><input type = "button" class = "button" value = "AC" onclick = "pocketcalculator.display.value = '0'"/></td>
+          <td><input type = "button" class = "button" value = "+/-" onclick = "pocketcalculator.display.value = -pocketcalculator.display.value"/></td>
+          <td><input type = "button" class = "button" value = "%" onclick = "pocketcalculator.display.value /= 100"/></td>
+          <td><input type = "button" class = "operators" value = "&divide" onclick = "pocketcalculator.display.value += ' / '"/></td>
         </tr>
         <tr>
-          <td><button onclick = "display('7');" class = "digits">7</button></td>
-          <td><button onclick = "display('8');" class = "digits">8</button></td>
-          <td><button onclick = "display('9');" class = "digits">9</button></td>
-          <td><button onclick = "display(' &times ');" class = "operators">&times</button></td>
+          <td><input type = "button" class = "digits" value = "7" onclick = "pocketcalculator.display.value += '7'"/></td>
+          <td><input type = "button" class = "digits" value = "8" onclick = "pocketcalculator.display.value += '8'"/></td>
+          <td><input type = "button" class = "digits" value = "9" onclick = "pocketcalculator.display.value += '9'"/></td>
+          <td><input type = "button" class = "operators" value = "&times" onclick = "pocketcalculator.display.value += ' * '"/></td>
         </tr>
         <tr>
-          <td><button onclick = "display('4');" class = "digits">4</button></td>
-          <td><button onclick = "display('5');" class = "digits">5</button></td>
-          <td><button onclick = "display('6');" class = "digits">6</button></td>
-          <td><button onclick = "display(' - ');" class = "operators">-</button></td>
+          <td><input type = "button" class = "digits" value = "4" onclick = "pocketcalculator.display.value += '4'"/></td>
+          <td><input type = "button" class = "digits" value = "5" onclick = "pocketcalculator.display.value += '5'"/></td>
+          <td><input type = "button" class = "digits" value = "6" onclick = "pocketcalculator.display.value += '6'"/></td>
+          <td><input type = "button" class = "operators" value = "-" onclick = "pocketcalculator.display.value += ' - '"/></td>
         </tr>
         <tr>
-          <td><button onclick = "display('1');" class = "digits">1</button></td>
-          <td><button onclick = "display('2');" class = "digits">2</button></td>
-          <td><button onclick = "display('3');" class = "digits">3</button></td>
-          <td><button onclick = "display(' + ');" class = "operators">+</button></td>
+          <td><input type = "button" class = "digits" value = "1" onclick = "pocketcalculator.display.value += '1'"/></td>
+          <td><input type = "button" class = "digits" value = "2" onclick = "pocketcalculator.display.value += '2'"/></td>
+          <td><input type = "button" class = "digits" value = "3" onclick = "pocketcalculator.display.value += '3'"/></td>
+          <td><input type = "button" class = "operators" value = "+" onclick = "pocketcalculator.display.value += ' + '"/></td>
         </tr>
         <tr>
-          <td><button onclick = "display('0');" class = "digits" id = "digits0">0</button></td>
-          <td><button onclick = "display('.');" class = "digits" id = "decimalpoint">.</button></td>
-          <td><button onclick = "equals();" class = "operators" id = "equals">=</button></td>
+          <td><input type = "button" class = "digits" id = "digits0" value = "0" onclick = "pocketcalculator.display.value += '0'"/></td>
+          <td><input type = "button" class = "digits" id = "decimalpoint" value = "." onclick = "pocketcalculator.display.value += '.'"/></td>
+          <td><input type = "button" class = "operators" id = "equals" value = "=" onclick = "pocketcalculator.display.value = eval(pocketcalculator.display.value)"/></td>
         </tr>
       </table>
-    </div>
+    </form>
   </body>
 </html>

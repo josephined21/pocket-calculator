@@ -1,14 +1,14 @@
-let a = 0;
-let display = document.getElementById("display");
-//let array = [];
+// ignore the code below
+/*
+let x;
+let y;
 
 function display(value){
   let display = document.getElementById("display");
   display.innerHTML += value;
-  //array.push(value);
+  x += value;
 }
 
-/*
 function digits(digit) {
   let display = document.getElementById("display");
   display.innerHTML += digit;
@@ -21,7 +21,6 @@ function operators() {
   let display = document.getElementById("display");
   display.innerHTML += operator;
 }
-*/
 
 let x;
 let y;
@@ -38,7 +37,6 @@ function multiplication(x, y) {
 function division(x, y) {
   return x / y;
 }
-/*
 function powers2(x) {
   return x ** 2;
 }
@@ -53,63 +51,32 @@ function squareroot(x) {
 }
 function root(x) {
   return (x);
-*/
 
-// function equals does not work
 function equals() {
   let display = document.getElementById("display");
-  /*
-  for(let n = 0; n < array.length - 1; n++){
-    if(!isNaN(Number(array[n]))){ // fix this line
-      x += array[n] * (10 * (array.length - n - 1)); // check this line
-    }
-    // find y
-    else if(array[n] = ","){
 
-    }
-    else if(array[n] = "."){
-
-    }
-    else if(array[n] = "-"){
-
-    }
-    else if(array[n] = "&times"){
-      multiplication(x, y);
-    }
-    else if(array[n] = "&divide"){
-      division(x, y);
-    }
-    else if(array[n] = "+"){
-      addition(x, y);
-    }
-    else if(array[n] = "-"){
-      subtraction(x, y);
-    }
-  }
-  */
-  /*
-  if(isNaN(a)){
+if(isNaN(a)){
     display.innerHTML = "ERROR";
   }
-  */
-  display.innerHTML = a;
+
+  display.innerHTML = eval(x);
 }
 
 function percentage() {
   let display = document.getElementById("display");
-  a /= 100;
-  display.innerHTML = a;
+  x /= 100;
+  display.innerHTML = x;
 }
 
 function negation() {
   let display = document.getElementById("display");
-  a = -a
-  display.innerHTML = a;
+  x = -x;
+  display.innerHTML = x;
 }
 
-// function clear does not work
+
 function clear() {
-  let display = document.getElementById("display");
-  display.innerHTML = 0;
-
+  var display = document.getElementById("display");
+  display.value = 0;
 }
+*/
