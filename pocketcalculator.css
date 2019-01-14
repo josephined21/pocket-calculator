@@ -13,6 +13,7 @@
   border: 3px solid black;
   border-radius: 10px;
 }
+/*
 .digits {
   background-color: lightgrey;
   color: black;
@@ -44,15 +45,4 @@
   background-color: ;
   color: ;
 }
-#digits0 {
-  width: 175px;
-  position: fixed;
-}
-#decimalpoint {
-  position: fixed;
-  left: 190px;
-}
-#equals {
-  position: fixed;
-  left: 277.5px;
-}
+*/
