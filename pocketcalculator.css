@@ -32,8 +32,9 @@
   padding: 15px 30px;
   border-radius: 10px;
 }
+*/
 .button {
-  background-color: darkgrey;
+  /* background-color: darkgrey; */
   color: black;
   font-size: 25px;
   text-align: center;
@@ -41,6 +42,7 @@
   padding: 15px 30px;
   border-radius: 10px;
 }
+/*
 .button:hover {
   background-color: ;
   color: ;
