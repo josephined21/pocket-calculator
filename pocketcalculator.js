@@ -3,25 +3,19 @@ function dis(val) {
 }
 
 function equals(val) {
+  let num = eval(val)
   /*
-  let num = eval(val);
-  let numString;
   if (num > 999) {
-    for (let i = 1; i < num.toString().length; i++) {
-      let n = (num / (i * (num.toString().length - 1))).toString();
-      numString += n;
-
-      if (i % 3 == 0){
-        numString += ",";
-      }
-    }
-    document.getElementById("display").value = numString;
-  }
-  else {
-    document.getElementById("display").value = num;
+      let numString = num.toLocaleString();
+      num = Number(numString);
   }
   */
-  document.getElementById("display").value = eval(val);
+
+  if (num > 999999999){
+    num = num.toExponential();
+  }
+
+  document.getElementById("display").value = num;
 }
 
 function percentage(val) {
@@ -37,10 +31,11 @@ function ac() {
 }
 
 /*
+to do:
 show error messages
   if the user attempts to divide by 0
   if the next value entered by the user after an operator is not a number
 have a fixed width / ensure that values never overflow its bounds
 numbers that exceed 999 should be comma-delimited
-limit input sizes to 999,999,999; computational results exceeding 999,999,999 - scientific notation
+limit input sizes to 999,999,999
 */

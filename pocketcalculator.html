@@ -14,42 +14,46 @@
     <form name = "pocketcalculator">
       <input type = "text" id = "display" value = "0" disabled/>
       <table>
-          <!-- <td><input type = "button" class = "button" value = "(" onclick = "dis('(')"></td> -->
-          <!-- <td><input type = "button" class = "button" value = ")" onclick = "dis(')')"></td> -->
-
-          <!-- <td><input type = "button" class = "button" value = "x^2" onclick = "dis(' ** 2')"></td> -->
-          <!-- <td><input type = "button" class = "button" value = "x^3" onclick = "dis('** 3')"></td> -->
-          <!-- <td><input type = "button" class = "button" value = "x^y" onclick = "dis(' ** ')"></td> -->
-
-          <!-- <td><input type = "button" class = "button" value = "rad / deg" onclick = ""></td> -->
-          <!-- <td><input type = "button" class = "button" value = "sin" onclick = ""></td> -->
-          <!-- <td><input type = "button" class = "button" value = "cos" onclick = ""></td> -->
-          <!-- <td><input type = "button" class = "button" value = "tan" onclick = ""></td> -->
         <tr>
+          <td><input type = "button" class = "button" value = "" onclick = "dis('')"></td>
+          <td><input type = "button" class = "button" value = "(" onclick = "dis('(')"></td>
+          <td><input type = "button" class = "button" value = ")" onclick = "dis(')')"></td>
           <td><input type = "button" class = "button" value = "AC" onclick = "ac()"/></td>
-          <td><input type = "button" class = "button" value = "+/-" onclick = "negation(pocketcalculator.display.value)"/></td>
+          <td><input type = "button" class = "button" value = "&plus;/&minus;" onclick = "negation(pocketcalculator.display.value)"/></td>
           <td><input type = "button" class = "button" value = "%" onclick = "percentage(pocketcalculator.display.value)"/></td>
-          <td><input type = "button" class = "button" value = "&divide" onclick = "dis(' / ')"/></td>
+          <td><input type = "button" class = "button" value = "&divide;" onclick = "dis(' / ')"/></td>
         </tr>
         <tr>
+          <td><input type = "button" class = "button" value = "x^2" onclick = "dis(' ** 2')"></td>
+          <td><input type = "button" class = "button" value = "x^3" onclick = "dis('** 3')"></td>
+          <td><input type = "button" class = "button" value = "x^y" onclick = "dis(' ** ')"></td>
           <td><input type = "button" class = "button" value = "7" onclick = "dis('7')"/></td>
           <td><input type = "button" class = "button" value = "8" onclick = "dis('8')"/></td>
           <td><input type = "button" class = "button" value = "9" onclick = "dis('9')"/></td>
-          <td><input type = "button" class = "button" value = "&times" onclick = "dis(' * ')"/></td>
+          <td><input type = "button" class = "button" value = "&times;" onclick = "dis(' * ')"/></td>
         </tr>
         <tr>
+          <td><input type = "button" class = "button" value = "&radic;" onclick = "dis('')"></td>
+          <td><input type = "button" class = "button" value = "&#8731;" onclick = "dis('')"></td>
+          <td><input type = "button" class = "button" value = "y&radic;" onclick = "dis('')"></td>
           <td><input type = "button" class = "button" value = "4" onclick = "dis('4')"/></td>
           <td><input type = "button" class = "button" value = "5" onclick = "dis('5')"/></td>
           <td><input type = "button" class = "button" value = "6" onclick = "dis('6')"/></td>
-          <td><input type = "button" class = "button" value = "-" onclick = "dis(' - ')"/></td>
+          <td><input type = "button" class = "button" value = "&minus;" onclick = "dis(' - ')"/></td>
         </tr>
         <tr>
+          <td><input type = "button" class = "button" value = "sin" onclick = "dis('')"></td>
+          <td><input type = "button" class = "button" value = "cos" onclick = "dis('')"></td>
+          <td><input type = "button" class = "button" value = "tan" onclick = "dis('')"></td>
           <td><input type = "button" class = "button" value = "1" onclick = "dis('1')"/></td>
           <td><input type = "button" class = "button" value = "2" onclick = "dis('2')"/></td>
           <td><input type = "button" class = "button" value = "3" onclick = "dis('3')"/></td>
-          <td><input type = "button" class = "button" value = "+" onclick = "dis(' + ')"/></td>
+          <td><input type = "button" class = "button" value = "&plus;" onclick = "dis(' + ')"/></td>
         </tr>
         <tr>
+          <td><input type = "button" class = "button" value = "arcsin" onclick = "dis('')"></td>
+          <td><input type = "button" class = "button" value = "arccos" onclick = "dis('')"></td>
+          <td><input type = "button" class = "button" value = "arctan" onclick = "dis('')"></td>
           <td><input type = "button" class = "button" value = "0" onclick = "dis('0')"/></td>
           <td><input type = "button" class = "button" value = "." onclick = "dis('.')"/></td>
           <td><input type = "button" class = "button" value = "=" onclick = "equals(pocketcalculator.display.value)"/></td>
