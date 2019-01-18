@@ -1,21 +1,63 @@
 function dis(val) {
   document.getElementById("display").value += val;
+
+  /*
+  if (!isNaN(val)){
+    for (let n = 0; n < str.length; n++) {
+      if (!isNaN(str.charAt(str.length - 1)) && !isNaN(str.charAt(str.length - 2))) {
+        document.getElementById("display").value += val + ",";
+      }
+    }
+  }
+  else {
+    document.getElementById("display").value += val;
+  }
+  */
+}
+let digitsPressed = 0;
+function digits(val) {
+  if (digitsPressed == 3) {
+    document.getElementById("display").value += "," + val;
+  }
+  else if () {
+    
+  }
+}
+
+function operators(val) {
+
+}
+
+let decimalPressed = false;
+function decimalPoint() {
+  if (val === "." && decimalPressed == true) {
+  }
+  else if (val === "." && decimalPressed == false) {
+    document.getElementById("display").value += ".";
+    decimalPressed = true;
+  }
 }
 
 function equals(val) {
   let num = eval(val)
+
   /*
-  if (num > 999) {
-      let numString = num.toLocaleString();
-      num = Number(numString);
+  for (let i = 0; i < num.toString().length; i++){
+    if (!isNaN(numString.charAt(i))) {
+      for (let j = 0; j < num.toString().length; j += 3) {
+        if (!isNaN(numString.charAt(j)) && !isNaN(numString.charAt(j + 1)) && !isNaN(numString.charAt(j + 2))) {
+          document.getElementById("display").value += ",";
+        }
+      }
+    }
   }
   */
 
-  if (num > 999999999){
+  if (num > 999999999) {
     num = num.toExponential();
   }
 
-  if (num === "Infinity"){
+  if (num === "Infinity") {
     num = "ERROR";
   }
 
@@ -38,7 +80,6 @@ function ac() {
 to do:
 show error messages
   if the next value entered by the user after an operator is not a number
-  if the user enters more than one decimal point ? 
 numbers that exceed 999 should be comma-delimited
 limit input sizes to 999,999,999
 */

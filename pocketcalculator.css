@@ -6,33 +6,13 @@
   color: black;
   font-size: 55px;
   height: 100px;
-  width: 600px;
+  width: 1020px;
   margin: 3px 3px 3px 3px;
   padding-top: 25px;
   padding-left: 10px;
   border: 3px solid black;
   border-radius: 10px;
 }
-/*
-.digits {
-  background-color: lightgrey;
-  color: black;
-  font-size: 25px;
-  text-align: center;
-  width: 85px;
-  padding: 15px 30px;
-  border-radius: 10px;
-}
-.operators {
-  background-color: black;
-  color: white;
-  font-size: 25px;
-  text-align: center;
-  width: 85px;
-  padding: 15px 30px;
-  border-radius: 10px;
-}
-*/
 .button {
   background-color: ;
   color: black;
