@@ -15,6 +15,10 @@ function equals(val) {
     num = num.toExponential();
   }
 
+  if (num === "Infinity"){
+    num = "ERROR";
+  }
+
   document.getElementById("display").value = num;
 }
 
@@ -33,9 +37,8 @@ function ac() {
 /*
 to do:
 show error messages
-  if the user attempts to divide by 0
   if the next value entered by the user after an operator is not a number
-have a fixed width / ensure that values never overflow its bounds
+  if the user enters more than one decimal point ? 
 numbers that exceed 999 should be comma-delimited
 limit input sizes to 999,999,999
 */
