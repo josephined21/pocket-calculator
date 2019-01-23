@@ -6,11 +6,11 @@
   color: black;
   font-size: 55px;
   height: 100px;
-  width: 1020px; /* 400px */
+  width: 395px; /* 1020px */
   margin: 3px 3px 3px 3px;
   padding-top: 25px;
   padding-left: 10px;
-  border-image: linear-gradient(to right, #e1c8fa 0%, #00c8fa 100%); /* linear-gradient(to right, #4bc8fa 0%, #00c8fa 100%) */
+  border-image: linear-gradient(to right, #4bc8fa 0%, #00c8fa 100%); /* linear-gradient(to right, #e1c8fa 0%, #00c8fa 100%) */
   border-image-slice: 1;
   border-width: 3px;
   border-radius: 10px;
@@ -51,12 +51,18 @@
 }
 #button8 {
   border: 3px solid #32c8fa;
+  position: relative;
+  right: 105px;
 }
 #button9 {
   border: 3px solid #19c8fa;
+  position: relative;
+  right: 105px;
 }
 #button10 {
   border: 3px solid #00c8fa;
+  position: relative;
+  right: 105px;
 }
 
 #button11 {
@@ -83,12 +89,18 @@
 }
 #button18 {
   border: 3px solid #32affa;
+  position: relative;
+  right: 105px;
 }
 #button19 {
   border: 3px solid #19affa;
+  position: relative;
+  right: 105px;
 }
 #button20 {
   border: 3px solid #00affa;
+  position: relative;
+  right: 105px;
 }
 
 #button21 {
@@ -115,12 +127,18 @@
 }
 #button28 {
   border: 3px solid #3296fa;
+  position: relative;
+  right: 105px;
 }
 #button29 {
   border: 3px solid #1996fa;
+  position: relative;
+  right: 105px;
 }
 #button30 {
   border: 3px solid #0096fa;
+  position: relative;
+  right: 105px;
 }
 
 #button31 {
@@ -147,12 +165,18 @@
 }
 #button38 {
   border: 3px solid #327dfa;
+  position: relative;
+  right: 105px;
 }
 #button39 {
   border: 3px solid #197dfa;
+  position: relative;
+  right: 105px;
 }
 #button40 {
   border: 3px solid #007dfa;
+  position: relative;
+  right: 105px;
 }
 
 #button41 {
@@ -176,6 +200,7 @@
 
 #button47 {
   border: 3px solid #4b64fa;
+  width: 205px;
 }
 #button48 {
   border: 3px solid #3264fa;

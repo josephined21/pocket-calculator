@@ -13,12 +13,43 @@ function dis(val) {
   }
 }
 
+// display digits
+let numDigitsPressed = 0;
+function digits(val) {
+  if (numDigitsPressed < 9) {
+    if (arr[0] === 0) {
+      arr.shift();
+      arr.push(val);
+      document.getElementById("display").value = val;
+      numDigitsPressed++;
+    }
+    else {
+      arr.push(val);
+      document.getElementById("display").value += val;
+      numDigitsPressed++;
+    }
+  }
+}
+
+// display operators
+function operators(val) {
+  numDigitsPressed = 0;
+  if (arr[0] === 0) {
+    arr.shift();
+    arr.push(val);
+    document.getElementById("display").value = val;
+  }
+  else {
+    arr.push(val);
+    document.getElementById("display").value += val;
+  }
+}
+
 // decimal point
 function getNotDecimalPoint(val) {
   return val !== ".";
 }
 
-/*
 function decimalPoint(val) {
   let arr1 = [];
   let str1 = val.toString();
@@ -59,32 +90,34 @@ function decimalPoint(val) {
   }
   return str2;
 }
-*/
 
 // equals
-function equals() {
+function equals(val) {
+  arr = [0];
+  val = val.toString();
+  for (let i = 0; i < val.length; i++) {
+    if (val.charAt(i) != ",") {
+      arr[i] = val.charAt(i);
+    }
+  }
+
   // operators
-  for (let i = 0; i < arr.length - 1; i++) {
-    if ((arr[i] == "+" || arr[i] == "-" || arr[i] == "*" || arr[i] == "/") && (arr[i + 1] == "+" || arr[i + 1] == "-" || arr[i + 1] == "*" || arr[i + 1] == "/")) {
-      arr.splice(i, 1);
-      i--;
+  for (let j = 0; j < arr.length - 1; j++) {
+    if ((arr[j] == "+" || arr[j] == "-" || arr[j] == "*" || arr[j] == "/") && (arr[j + 1] == "+" || arr[j + 1] == "-" || arr[j + 1] == "*" || arr[j + 1] == "/")) {
+      arr.splice(j, 1);
+      j--;
     }
   }
 
   // decimal point
   /*
-  let str;
-  for (let j = 0; j < arr.length; j++) {
-    if (!isNaN(arr[j])) {
-      while (!isNaN(arr[j]) || arr[j] == ".") {
-        let n;
-      }
-    }
+  for (let k = 0; k < arr.length; k++) {
+
   }
   */
 
   let str = arr.join("");
-  num = eval(str);
+  let num = eval(str);
 
   // scientific notation
   if (num > 999999999) {
@@ -96,7 +129,8 @@ function equals() {
     num = num.toLocaleString();
   }
   // errors
-  else if (val == "NaN" || val == "undefined" || val == "Infinity") {
+  if (num == "NaN" || num == "undefined" || num == "Infinity") {
+    arr = [0];
     num = "ERROR";
   }
 
@@ -115,12 +149,12 @@ function negation(val) {
 
 // clear
 function ac() {
+  numDigitsPressed = 0;
   arr = [0];
   document.getElementById("display").value = "0";
 }
 
 /*
 to do:
-limit input sizes to 999,999,999
 decimal points afer the first decimal point in a number are ignored
 */
