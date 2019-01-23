@@ -10,7 +10,7 @@
   margin: 3px 3px 3px 3px;
   padding-top: 25px;
   padding-left: 10px;
-  border-image: linear-gradient(to right, #4bc8fa 0%, #00c8fa 100%); /* linear-gradient(to right, #e1c8fa 0%, #00c8fa 100%) */
+  border-image: linear-gradient(to right, #B1F4CF 0%, #ACE3D2 100%); /* linear-gradient(to right, #4bc8fa 0%, #00c8fa 100%) linear-gradient(to right, #e1c8fa 0%, #00c8fa 100%) */
   border-image-slice: 1;
   border-width: 3px;
   border-radius: 10px;
@@ -26,7 +26,7 @@
   padding: 15px 30px;
   border-radius: 10px;
 }
-
+/*
 #button1 {
   border: 3px solid #e1c8fa;
 }
@@ -45,26 +45,26 @@
 #button6 {
   border: 3px solid #64c8fa;
 }
-
+*/
 #button7 {
-  border: 3px solid #4bc8fa;
+  border: 3px solid #B1F4CF; /* #4bc8fa */
 }
 #button8 {
-  border: 3px solid #32c8fa;
+  border: 3px solid #AFEED0; /* #32c8fa */
   position: relative;
   right: 105px;
 }
 #button9 {
-  border: 3px solid #19c8fa;
+  border: 3px solid #AEE8D1; /* #19c8fa */
   position: relative;
   right: 105px;
 }
 #button10 {
-  border: 3px solid #00c8fa;
+  border: 3px solid #ACE3D2; /* #00c8fa */
   position: relative;
   right: 105px;
 }
-
+/*
 #button11 {
   border: 3px solid #c8affa;
 }
@@ -83,26 +83,26 @@
 #button16 {
   border: 3px solid #64affa;
 }
-
+*/
 #button17 {
-  border: 3px solid #4baffa;
+  border: 3px solid #ABDDD3; /* #4baffa */
 }
 #button18 {
-  border: 3px solid #32affa;
+  border: 3px solid #AAD8D4; /* #32affa */
   position: relative;
   right: 105px;
 }
 #button19 {
-  border: 3px solid #19affa;
+  border: 3px solid #A8D2D5; /* #19affa */
   position: relative;
   right: 105px;
 }
 #button20 {
-  border: 3px solid #00affa;
+  border: 3px solid #A7CDD6; /* #00affa */
   position: relative;
   right: 105px;
 }
-
+/*
 #button21 {
   border: 3px solid #e196fa;
 }
@@ -121,26 +121,26 @@
 #button26 {
   border: 3px solid #6496fa;
 }
-
+*/
 #button27 {
-  border: 3px solid #4b96fa;
+  border: 3px solid #A5C7D7; /* #4b96fa */
 }
 #button28 {
-  border: 3px solid #3296fa;
+  border: 3px solid #A4C2D9; /* #3296fa */
   position: relative;
   right: 105px;
 }
 #button29 {
-  border: 3px solid #1996fa;
+  border: 3px solid #A3BCDA; /* #1996fa */
   position: relative;
   right: 105px;
 }
 #button30 {
-  border: 3px solid #0096fa;
+  border: 3px solid #A1B6DB; /* #0096fa */
   position: relative;
   right: 105px;
 }
-
+/*
 #button31 {
   border: 3px solid #e17dfa;
 }
@@ -159,26 +159,26 @@
 #button36 {
   border: 3px solid #647dfa;
 }
-
+*/
 #button37 {
-  border: 3px solid #4b7dfa;
+  border: 3px solid #A0B1DC; /* #4b7dfa */
 }
 #button38 {
-  border: 3px solid #327dfa;
+  border: 3px solid #9EABDD; /* #327dfa */
   position: relative;
   right: 105px;
 }
 #button39 {
-  border: 3px solid #197dfa;
+  border: 3px solid #9DA6DE; /* #197dfa */
   position: relative;
   right: 105px;
 }
 #button40 {
-  border: 3px solid #007dfa;
+  border: 3px solid #9CA0DF; /* #007dfa */
   position: relative;
   right: 105px;
 }
-
+/*
 #button41 {
   border: 3px solid #e164fa;
 }
@@ -197,14 +197,14 @@
 #button46 {
   border: 3px solid #6464fa;
 }
-
+*/
 #button47 {
-  border: 3px solid #4b64fa;
+  border: 3px solid #9A9BE0; /* #4b64fa */
   width: 205px;
 }
 #button48 {
-  border: 3px solid #3264fa;
+  border: 3px solid #9995E1; /* #3264fa */
 }
 #button49 {
-  border: 3px solid #1964fa;
+  border: 3px solid #9890e3; /* #1964fa */
 }
